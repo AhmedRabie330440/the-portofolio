@@ -1,0 +1,490 @@
+.Home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/intro-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.loading {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 674874874578597;
+}
+.Ahmed {
+  margin-left: 50px;
+}
+.sk-chase {
+  width: 40px;
+  top: 300px;
+  left: 50%;
+  height: 40px;
+  position: relative;
+  animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: sk-chase-dot 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:before {
+  content: '';
+  display: block;
+  width: 25%;
+  height: 25%;
+  background-color: black;
+  border-radius: 100%;
+  animation: sk-chase-dot-before 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:nth-child(1) {
+  animation-delay: -1.1s;
+}
+.sk-chase-dot:nth-child(2) {
+  animation-delay: -1s;
+}
+.sk-chase-dot:nth-child(3) {
+  animation-delay: -0.9s;
+}
+.sk-chase-dot:nth-child(4) {
+  animation-delay: -0.8s;
+}
+.sk-chase-dot:nth-child(5) {
+  animation-delay: -0.7s;
+}
+.sk-chase-dot:nth-child(6) {
+  animation-delay: -0.6s;
+}
+.sk-chase-dot:nth-child(1):before {
+  animation-delay: -1.1s;
+}
+.sk-chase-dot:nth-child(2):before {
+  animation-delay: -1s;
+}
+.sk-chase-dot:nth-child(3):before {
+  animation-delay: -0.9s;
+}
+.sk-chase-dot:nth-child(4):before {
+  animation-delay: -0.8s;
+}
+.sk-chase-dot:nth-child(5):before {
+  animation-delay: -0.7s;
+}
+.sk-chase-dot:nth-child(6):before {
+  animation-delay: -0.6s;
+}
+
+@keyframes sk-chase {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sk-chase-dot {
+  80%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sk-chase-dot-before {
+  50% {
+    transform: scale(0.4);
+  }
+  100%,
+  0% {
+    transform: scale(1);
+  }
+}
+
+.captionH {
+  padding: 150px;
+}
+.brd {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.icon {
+  width: 50px;
+  height: 80px;
+  margin: auto;
+}
+.animatIcon {
+  position: relative;
+  animation-name: animat;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+@keyframes animat {
+  20% {
+    top: 0px;
+    bottom: 80px;
+  }
+  40% {
+    top: 10px;
+    bottom: 50px;
+  }
+  60% {
+    top: 20px;
+    bottom: 70px;
+  }
+  80% {
+    top: 40px;
+    bottom: 80px;
+  }
+  100% {
+    top: 0px;
+    bottom: 0px;
+  }
+}
+.intro {
+  display: flex;
+  color: white;
+  margin-left: 350px;
+}
+.typing {
+  position: relative;
+  margin-left: 10px;
+}
+.typing::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 40px;
+  border-right: 3px solid white;
+  margin-top: 5px;
+  right: -5px;
+  animation-name: blink;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.KnowA::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #20c997;
+  top: 70%;
+  left: 45%;
+}
+.Name::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  top: 0%;
+  bottom: 30px;
+  left: 0px;
+  opacity: 0.2;
+  margin-top: -11px;
+}
+
+.Name,
+.Email,
+.KnowA,
+.Age {
+  position: relative;
+}
+.Name::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  top: 0%;
+  bottom: 30px;
+  left: 0px;
+  opacity: 0.2;
+  margin-top: -11px;
+}
+
+.Email::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  top: 0%;
+  bottom: 30px;
+  left: 0px;
+  opacity: 0.2;
+  margin-top: -11px;
+}
+
+.Age::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  top: 0%;
+  bottom: 30px;
+  left: 0px;
+  opacity: 0.2;
+  margin-top: -11px;
+}
+
+.ul {
+  list-style-type: none;
+}
+.Link {
+  text-decoration: none;
+  color: #20c997 !important;
+}
+.colorN {
+  color: #20c997;
+}
+.Years,
+.Clients,
+.Projects,
+.Get {
+  border-right: dashed #e0dede;
+}
+.fas {
+  color: #20c997;
+}
+.icon {
+  padding-top: 15px;
+  padding-left: 7px;
+  height: 60px;
+}
+.WhatIDo {
+  padding-top: 10%;
+}
+.con {
+  padding-top: 7%;
+}
+
+.Whatc {
+  position: relative;
+}
+.Whatc::after {
+  content: '';
+  position: absolute;
+  background-color: #20c997;
+  width: 100px;
+  height: 3px;
+  top: 60px;
+  left: 46%;
+}
+.Resume {
+  padding-top: 10%;
+}
+.Res {
+  position: relative;
+}
+.Res::after {
+  content: '';
+  position: absolute;
+  background-color: #20c997;
+  width: 100px;
+  height: 3px;
+  top: 60px;
+  left: 46%;
+}
+.containerRe {
+  padding-top: 10%;
+}
+
+.Item {
+  position: relative;
+  cursor: pointer;
+}
+
+.caption {
+  background-color: #fff;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 5%;
+}
+.light-box {
+  position: fixed;
+  top: 0%;
+  bottom: 0;
+  left: 0%;
+  right: 0%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.light-box-content {
+  position: relative;
+  background-image: url(../images/portfolio-1.jpg);
+  width: 50%;
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+}
+.light-box-content i {
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.Module {
+  padding-top: 10%;
+}
+
+.Mod {
+  position: relative;
+}
+.Mod::after {
+  content: '';
+  position: absolute;
+  background-color: #20c997;
+  width: 100px;
+  height: 3px;
+  top: 60px;
+  left: 46%;
+}
+
+.Ski {
+  position: relative;
+}
+.Ski::after {
+  content: '';
+  position: absolute;
+  background-color: #20c997;
+  width: 100px;
+  height: 3px;
+  top: 60px;
+  left: 25%;
+}
+.p {
+  background-color: #20c997;
+  width: 100px;
+}
+.progress {
+  height: 10px;
+}
+.progress-bar {
+  background-color: #20c997 !important;
+}
+.navbar {
+  z-index: 765334567654567;
+}
+
+.Portfolio {
+  padding-top: 10%;
+}
+.gallery1_product {
+  margin-bottom: 340px;
+}
+.edit {
+  width: 90%;
+  padding: 20%;
+  background-color: #20c997;
+}
+.edit2 {
+  padding-right: 20%;
+  top: 0%;
+}
+.work {
+  position: relative;
+  overflow: hidden;
+}
+.layer {
+  position: absolute;
+  background-color: #20c997;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.8s;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+.work:hover .layer {
+  opacity: 1;
+}
+.work:hover .img {
+  transform: scale(1.2);
+}
+.work img {
+  transition: all 0.5s;
+}
+.wor {
+  position: relative;
+}
+.wor::after {
+  content: '';
+  position: absolute;
+  background-color: #20c997;
+  width: 100px;
+  height: 3px;
+  top: 60px;
+  left: 46%;
+}
+.nav-link {
+  color: #7b8084;
+}
+.My-Work {
+  padding-top: 10%;
+}
+.first-h {
+  padding-bottom: 100px;
+}
+.My-skils {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tools.jpg);
+  background-attachment: fixed;
+  padding-top: 5%;
+}
+.navbar-nav {
+  padding-left: 25%;
+}
+.Me {
+  padding-top: 10%;
+}
+.AboutMe {
+  position: relative;
+}
+.AboutMe::after {
+  content: '';
+  position: absolute;
+  background-color: #20c997;
+  width: 100px;
+  height: 3px;
+  top: 60px;
+  left: 46%;
+}
+.About{
+  padding-top: 5%;
+}
+.Aboutl {
+  padding-bottom: 60px;
+}
+.allBox {
+  z-index: 765555;
+  top: 45%;
+  right: -216px;
+}
+.allBox ul li {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.allBox .fas {
+  cursor: pointer;
+
+}
